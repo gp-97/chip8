@@ -1,0 +1,102 @@
+\hypertarget{classChip8}{}\doxysection{Chip8 Class Reference}
+\label{classChip8}\index{Chip8@{Chip8}}
+
+
+\mbox{\hyperlink{classChip8}{Chip8}} prototype class.  
+
+
+
+
+{\ttfamily \#include $<$Chip8.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classChip8_a0c5f72784cf864ead78e78fea06a8237}{Load\+ROM}} (char const $\ast$)
+\begin{DoxyCompactList}\small\item\em ROM Loader. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classChip8_a82ce77ac1624ffdcad36cbd8b1b79f7d}\label{classChip8_a82ce77ac1624ffdcad36cbd8b1b79f7d}} 
+uint8\+\_\+t {\bfseries registers} \mbox{[}16\mbox{]} \{\}
+\item 
+\mbox{\Hypertarget{classChip8_a461cf61226821e2a5034f1008908425e}\label{classChip8_a461cf61226821e2a5034f1008908425e}} 
+uint8\+\_\+t {\bfseries memory} \mbox{[}4096\mbox{]} \{\}
+\item 
+\mbox{\Hypertarget{classChip8_a2af12650003a8316e6299cef275d903e}\label{classChip8_a2af12650003a8316e6299cef275d903e}} 
+uint16\+\_\+t {\bfseries index} \{\}
+\item 
+\mbox{\Hypertarget{classChip8_a4cf699335179f41d2777e350beb3dddb}\label{classChip8_a4cf699335179f41d2777e350beb3dddb}} 
+uint16\+\_\+t {\bfseries pc} \{\}
+\item 
+\mbox{\Hypertarget{classChip8_a29729733a4571d50b56ea3a815167ab2}\label{classChip8_a29729733a4571d50b56ea3a815167ab2}} 
+uint16\+\_\+t {\bfseries stack} \mbox{[}16\mbox{]} \{\}
+\item 
+\mbox{\Hypertarget{classChip8_ada80292af5ea1c7283b200c7e136b28d}\label{classChip8_ada80292af5ea1c7283b200c7e136b28d}} 
+uint8\+\_\+t {\bfseries sp} \{\}
+\item 
+\mbox{\Hypertarget{classChip8_a8760493931a1209a207eb9d9f1995f00}\label{classChip8_a8760493931a1209a207eb9d9f1995f00}} 
+uint8\+\_\+t {\bfseries delay\+Timer} \{\}
+\item 
+\mbox{\Hypertarget{classChip8_a6273017540576b43e1b79ed264029dc1}\label{classChip8_a6273017540576b43e1b79ed264029dc1}} 
+uint8\+\_\+t {\bfseries sound\+Timer} \{\}
+\item 
+\mbox{\Hypertarget{classChip8_aafe3c10540aa094f1b8bb6fd951e2484}\label{classChip8_aafe3c10540aa094f1b8bb6fd951e2484}} 
+uint8\+\_\+t {\bfseries keypad} \mbox{[}16\mbox{]} \{\}
+\item 
+\mbox{\Hypertarget{classChip8_a8c9da876a16880d4fcd5ebc9d106a3a8}\label{classChip8_a8c9da876a16880d4fcd5ebc9d106a3a8}} 
+uint8\+\_\+t {\bfseries video} \mbox{[}64 $\ast$32\mbox{]} \{\}
+\item 
+\mbox{\Hypertarget{classChip8_a1030bae314b55cf858d69c08a9f0f576}\label{classChip8_a1030bae314b55cf858d69c08a9f0f576}} 
+uint16\+\_\+t {\bfseries opcode} \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classChip8}{Chip8}} prototype class. 
+
+Contains all the data members and the associated member functions
+
+The main components to be emulated include\+:
+
+
+\begin{DoxyItemize}
+\item {\bfseries{16 bit Registers}}
+\item {\bfseries{4K Memory}}
+\item {\bfseries{16-\/bit Index Register}}
+\item {\bfseries{16-\/bit Program Counter}}
+\item {\bfseries{16-\/level Stack}}
+\item {\bfseries{8-\/bit Stack Pointer}}
+\item {\bfseries{8-\/bit Delay Timer}}
+\item {\bfseries{8-\/bit Sound Timer}}
+\item {\bfseries{16 Input Keys}}
+\item {\bfseries{64x32 Monochrome Monitor}} 
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classChip8_a0c5f72784cf864ead78e78fea06a8237}\label{classChip8_a0c5f72784cf864ead78e78fea06a8237}} 
+\index{Chip8@{Chip8}!LoadROM@{LoadROM}}
+\index{LoadROM@{LoadROM}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{LoadROM()}{LoadROM()}}
+{\footnotesize\ttfamily void Chip8\+::\+Load\+ROM (\begin{DoxyParamCaption}\item[{char const $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+ROM Loader. 
+
+Loads ROM into the main memory before any execution occurs
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Constant char ptr to filename \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Chip8_8h}{Chip8.\+h}}\item 
+src/\mbox{\hyperlink{Chip8_8cpp}{Chip8.\+cpp}}\end{DoxyCompactItemize}
