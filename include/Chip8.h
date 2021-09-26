@@ -57,6 +57,17 @@ public:
     uint16_t opcode{};
 
 public:
+    /** @brief Chip8 Constructor
+ * 
+ * Used to initialize the program counter
+ */
+    Chip8();
+
+    /** @brief Chip8 Destructor
+     */
+    ~Chip8();
+
+public:
     /**@brief ROM Loader
  * 
  * Loads ROM into the main memory before any execution occurs
@@ -64,7 +75,7 @@ public:
  * @param filename Constant char ptr to filename
  * @return Void
  */
-    void Chip8::LoadROM(char const *);
+    void LoadROM(char const *);
 };
 
 #endif

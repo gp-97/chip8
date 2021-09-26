@@ -13,4 +13,8 @@ Include dependency graph for Chip8.\+cpp\+:
 \doxysubsection{Detailed Description}
 Implementation file for \mbox{\hyperlink{Chip8_8h}{Chip8.\+h}}. 
 
-This file implements the Chip-\/8 core functionalities. 
+This file implements the Chip-\/8 core functionalities.
+
+\begin{DoxyAuthor}{Author}
+Gaurav Patel 
+\end{DoxyAuthor}

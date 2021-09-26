@@ -4,8 +4,15 @@
  *  This file implements the Chip-8 core
  *  functionalities.
  * 
+ *  @author Gaurav Patel
  */
 #include <Chip8.h>
+
+// Chip8 constructor implementation
+Chip8::Chip8() : pc(START_ADDRESS) {}
+
+// Chip8 destructor
+Chip8::~Chip8() {}
 
 void Chip8::LoadROM(char const *filename)
 {

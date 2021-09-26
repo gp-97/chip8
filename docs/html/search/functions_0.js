@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['loadrom_10',['LoadROM',['../classChip8.html#a0c5f72784cf864ead78e78fea06a8237',1,'Chip8']]]
+  ['chip8_11',['Chip8',['../classChip8.html#a6d72f2cd7b791e0da2b66e3f9dc2b751',1,'Chip8']]]
 ];
