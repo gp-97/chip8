@@ -13,12 +13,79 @@
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classChip8_a6d72f2cd7b791e0da2b66e3f9dc2b751}{Chip8}} ()
-\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classChip8}{Chip8}} Constructor. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classChip8_ab16bd941c1634d4c9c457e383f85cb3b}\label{classChip8_ab16bd941c1634d4c9c457e383f85cb3b}} 
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{\hyperlink{classChip8}{Chip8}} Constructor}} \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classChip8_ab16bd941c1634d4c9c457e383f85cb3b}{$\sim$\+Chip8}} ()
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classChip8}{Chip8}} Destructor. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classChip8_a0c5f72784cf864ead78e78fea06a8237}{Load\+ROM}} (char const $\ast$)
-\begin{DoxyCompactList}\small\item\em ROM Loader. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em {\bfseries{ROM Loader}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChip8_a42a0b4adc145f56db8c78e91fb3c27d8}{OP\+\_\+00\+E0}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{Clear Screen}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChip8_ab378b35c24a9ca0c8efc8ed8175732c2}{OP\+\_\+00\+EE}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{Return from Sub Routine}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChip8_a84b8dbc6bd136e941dd792bdcdacb635}{OP\+\_\+1nnn}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{Jump to location NNN}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChip8_a31d5ae177a988ac656c15e6f58b2d831}{OP\+\_\+2nnn}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{Call addr}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChip8_af8bd77b5ae887922b1a439c49a023003}{OP\+\_\+3xkk}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{SE Vx, byte}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChip8_a1c9269e6d1c14a3fdbacd4b14b5af1cd}{OP\+\_\+4xkk}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{SNE Vx, byte}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChip8_a028b595e4b00f9328427a5b1b42ecda9}{OP\+\_\+5xy0}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{SE Vx, Vy}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChip8_a88a38e73009a2f3c36a6cfc73b1caf27}{OP\+\_\+6xkk}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{LD Vx, byte}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChip8_a79874e5f77b4d3d6abf2d6ff58aee278}{OP\+\_\+7xkk}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{ADD Vx, byte}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChip8_a0d72e54af39b07861db8f146d6e08e3b}{OP\+\_\+8xy0}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{LD Vx, Vy}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChip8_acf3c5caff502b3e37ac331e4f9616e30}{OP\+\_\+8xy1}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{OR Vx, Vy}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChip8_a6165dfc32aee86bdcea06e2c6db2bc19}{OP\+\_\+8xy2}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{AND Vx, Vy}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChip8_a707447f4dbcd2c7893c7fe0eb7b4974f}{OP\+\_\+8xy3}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{XOR Vx, Vy}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChip8_a6d04cc7e4350b10d4c54af7b5e222c2c}{OP\+\_\+8xy4}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{ADD Vx, Vy}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChip8_a39b6095f460e927986c5fee7759fddda}{OP\+\_\+8xy5}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{SUB Vx, Vy}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChip8_a957e2b2bd4ba68ab15b69a02f8612844}{OP\+\_\+8xy6}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{SHR Vx}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChip8_abd2e774be09db233592a0e5da092fae6}{OP\+\_\+8xy7}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{SUBN Vx, Vy}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChip8_a44df0fa024f9c2cb4e02d58a37c863f9}{OP\+\_\+8xyE}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{SHL Vx}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChip8_a01d5f9d78111161c8490a7bc72494a64}{OP\+\_\+9xy0}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{SNE Vx, Vy}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChip8_aeffd2a3c7e4492433113f2db92ee4c10}{OP\+\_\+\+Annn}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{LD I, addr}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChip8_a7ae912cf91e7c034ecbff793f2e14fb6}{OP\+\_\+\+Bnnn}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{JP V0, addr}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChip8_a39864a92adc7963c323fd2103a1ed80d}{OP\+\_\+\+Cxkk}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{RND Vx, byte}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChip8_ae9579c58b211535fc15628266a5abae9}{OP\+\_\+\+Dxyn}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{DRW Vx, Vy, nibble}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChip8_a8e4f8dd2f117d454d5b60e5514aa57dd}{OP\+\_\+\+Ex9E}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{SKP Vx}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChip8_a0537b2069b609522c9bbba0184db2725}{OP\+\_\+\+Ex\+A1}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{SKNP Vx}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChip8_a83698f3b7ef770b02e09d44c3daace06}{OP\+\_\+\+Fx07}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{LD Vx, DT}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChip8_a39c1ec65d33cd718509edaaa69e2bc28}{OP\+\_\+\+Fx0A}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{LD Vx, K}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChip8_a9f3b25aa9a4a63072eb570fdae10f0a5}{OP\+\_\+\+Fx15}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{LD DT, Vx}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChip8_a7659917688df1a2cc14747b083f06087}{OP\+\_\+\+Fx18}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{LD ST, Vx}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChip8_a1ba6c43bbae06d99dd0266412167daf2}{OP\+\_\+\+Fx1E}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{ADD I, Vx}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChip8_ace4a58f583f3c971b1dc5ae96b7e855a}{OP\+\_\+\+Fx29}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{LD F, Vx}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChip8_aabcbaa3bf8bba432c06129e92c7a818f}{OP\+\_\+\+Fx33}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{LD B, Vx}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChip8_a8fdbd98f87ae424cd7c3ceee230b68c9}{OP\+\_\+\+Fx55}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{LD \mbox{[}I\mbox{]}, Vx}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChip8_a18d0410d24b6cdc71c12b39c60f49f0f}{OP\+\_\+\+Fx65}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{LD \mbox{[}Vx\mbox{]}, I}} \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -54,6 +121,12 @@ uint8\+\_\+t {\bfseries video} \mbox{[}64 $\ast$32\mbox{]} \{\}
 \item 
 \mbox{\Hypertarget{classChip8_a1030bae314b55cf858d69c08a9f0f576}\label{classChip8_a1030bae314b55cf858d69c08a9f0f576}} 
 uint16\+\_\+t {\bfseries opcode} \{\}
+\item 
+\mbox{\Hypertarget{classChip8_a422c34a2f3dc8e864d1235e451b8cd99}\label{classChip8_a422c34a2f3dc8e864d1235e451b8cd99}} 
+std\+::default\+\_\+random\+\_\+engine {\bfseries rand\+Gen}
+\item 
+\mbox{\Hypertarget{classChip8_a3ff7bba7758dca2e7e51371704998b0d}\label{classChip8_a3ff7bba7758dca2e7e51371704998b0d}} 
+std\+::uniform\+\_\+int\+\_\+distribution$<$ uint8\+\_\+t $>$ {\bfseries rand\+Byte}
 \end{DoxyCompactItemize}
 
 
@@ -87,9 +160,19 @@ The main components to be emulated include\+:
 
 
 
-\mbox{\hyperlink{classChip8}{Chip8}} Constructor. 
+{\bfseries{\mbox{\hyperlink{classChip8}{Chip8}} Constructor}} 
 
-Used to initialize the program counter 
+Used to initialize the Chip-\/8 member variables \mbox{\Hypertarget{classChip8_ab16bd941c1634d4c9c457e383f85cb3b}\label{classChip8_ab16bd941c1634d4c9c457e383f85cb3b}} 
+\index{Chip8@{Chip8}!````~Chip8@{$\sim$Chip8}}
+\index{````~Chip8@{$\sim$Chip8}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{$\sim$Chip8()}{~Chip8()}}
+{\footnotesize\ttfamily Chip8\+::$\sim$\+Chip8 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classChip8}{Chip8}} Destructor. 
+
+Basic destructor for \mbox{\hyperlink{classChip8}{Chip8}} class object 
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classChip8_a0c5f72784cf864ead78e78fea06a8237}\label{classChip8_a0c5f72784cf864ead78e78fea06a8237}} 
@@ -100,7 +183,7 @@ Used to initialize the program counter
 
 
 
-ROM Loader. 
+{\bfseries{ROM Loader}} 
 
 Loads ROM into the main memory before any execution occurs
 
@@ -112,7 +195,349 @@ Loads ROM into the main memory before any execution occurs
 \begin{DoxyReturn}{Returns}
 Void 
 \end{DoxyReturn}
+\mbox{\Hypertarget{classChip8_a42a0b4adc145f56db8c78e91fb3c27d8}\label{classChip8_a42a0b4adc145f56db8c78e91fb3c27d8}} 
+\index{Chip8@{Chip8}!OP\_00E0@{OP\_00E0}}
+\index{OP\_00E0@{OP\_00E0}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{OP\_00E0()}{OP\_00E0()}}
+{\footnotesize\ttfamily void Chip8\+::\+OP\+\_\+00\+E0 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+{\bfseries{Clear Screen}} 
+
+Set the entire video buffer to zeroes
+
+Defining implementation for all the 34 opcodes \mbox{\Hypertarget{classChip8_ab378b35c24a9ca0c8efc8ed8175732c2}\label{classChip8_ab378b35c24a9ca0c8efc8ed8175732c2}} 
+\index{Chip8@{Chip8}!OP\_00EE@{OP\_00EE}}
+\index{OP\_00EE@{OP\_00EE}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{OP\_00EE()}{OP\_00EE()}}
+{\footnotesize\ttfamily void Chip8\+::\+OP\+\_\+00\+EE (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{Return from Sub Routine}} 
+
+Set the program counter to the calling routine \mbox{\Hypertarget{classChip8_a84b8dbc6bd136e941dd792bdcdacb635}\label{classChip8_a84b8dbc6bd136e941dd792bdcdacb635}} 
+\index{Chip8@{Chip8}!OP\_1nnn@{OP\_1nnn}}
+\index{OP\_1nnn@{OP\_1nnn}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{OP\_1nnn()}{OP\_1nnn()}}
+{\footnotesize\ttfamily void Chip8\+::\+OP\+\_\+1nnn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{Jump to location NNN}} 
+
+Set the program counter to nnn \mbox{\Hypertarget{classChip8_a31d5ae177a988ac656c15e6f58b2d831}\label{classChip8_a31d5ae177a988ac656c15e6f58b2d831}} 
+\index{Chip8@{Chip8}!OP\_2nnn@{OP\_2nnn}}
+\index{OP\_2nnn@{OP\_2nnn}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{OP\_2nnn()}{OP\_2nnn()}}
+{\footnotesize\ttfamily void Chip8\+::\+OP\+\_\+2nnn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{Call addr}} 
+
+Call sub-\/routine at nnn \mbox{\Hypertarget{classChip8_af8bd77b5ae887922b1a439c49a023003}\label{classChip8_af8bd77b5ae887922b1a439c49a023003}} 
+\index{Chip8@{Chip8}!OP\_3xkk@{OP\_3xkk}}
+\index{OP\_3xkk@{OP\_3xkk}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{OP\_3xkk()}{OP\_3xkk()}}
+{\footnotesize\ttfamily void Chip8\+::\+OP\+\_\+3xkk (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{SE Vx, byte}} 
+
+Skip next instruction if Vx = kk \mbox{\Hypertarget{classChip8_a1c9269e6d1c14a3fdbacd4b14b5af1cd}\label{classChip8_a1c9269e6d1c14a3fdbacd4b14b5af1cd}} 
+\index{Chip8@{Chip8}!OP\_4xkk@{OP\_4xkk}}
+\index{OP\_4xkk@{OP\_4xkk}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{OP\_4xkk()}{OP\_4xkk()}}
+{\footnotesize\ttfamily void Chip8\+::\+OP\+\_\+4xkk (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{SNE Vx, byte}} 
+
+Skip next instruction if Vx != kk \mbox{\Hypertarget{classChip8_a028b595e4b00f9328427a5b1b42ecda9}\label{classChip8_a028b595e4b00f9328427a5b1b42ecda9}} 
+\index{Chip8@{Chip8}!OP\_5xy0@{OP\_5xy0}}
+\index{OP\_5xy0@{OP\_5xy0}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{OP\_5xy0()}{OP\_5xy0()}}
+{\footnotesize\ttfamily void Chip8\+::\+OP\+\_\+5xy0 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{SE Vx, Vy}} 
+
+Skip next instruction if Vx = Vy \mbox{\Hypertarget{classChip8_a88a38e73009a2f3c36a6cfc73b1caf27}\label{classChip8_a88a38e73009a2f3c36a6cfc73b1caf27}} 
+\index{Chip8@{Chip8}!OP\_6xkk@{OP\_6xkk}}
+\index{OP\_6xkk@{OP\_6xkk}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{OP\_6xkk()}{OP\_6xkk()}}
+{\footnotesize\ttfamily void Chip8\+::\+OP\+\_\+6xkk (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{LD Vx, byte}} 
+
+Set Vx = kk \mbox{\Hypertarget{classChip8_a79874e5f77b4d3d6abf2d6ff58aee278}\label{classChip8_a79874e5f77b4d3d6abf2d6ff58aee278}} 
+\index{Chip8@{Chip8}!OP\_7xkk@{OP\_7xkk}}
+\index{OP\_7xkk@{OP\_7xkk}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{OP\_7xkk()}{OP\_7xkk()}}
+{\footnotesize\ttfamily void Chip8\+::\+OP\+\_\+7xkk (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{ADD Vx, byte}} 
+
+Set Vx = Vx + kk \mbox{\Hypertarget{classChip8_a0d72e54af39b07861db8f146d6e08e3b}\label{classChip8_a0d72e54af39b07861db8f146d6e08e3b}} 
+\index{Chip8@{Chip8}!OP\_8xy0@{OP\_8xy0}}
+\index{OP\_8xy0@{OP\_8xy0}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{OP\_8xy0()}{OP\_8xy0()}}
+{\footnotesize\ttfamily void Chip8\+::\+OP\+\_\+8xy0 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{LD Vx, Vy}} 
+
+Set Vx = Vy \mbox{\Hypertarget{classChip8_acf3c5caff502b3e37ac331e4f9616e30}\label{classChip8_acf3c5caff502b3e37ac331e4f9616e30}} 
+\index{Chip8@{Chip8}!OP\_8xy1@{OP\_8xy1}}
+\index{OP\_8xy1@{OP\_8xy1}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{OP\_8xy1()}{OP\_8xy1()}}
+{\footnotesize\ttfamily void Chip8\+::\+OP\+\_\+8xy1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{OR Vx, Vy}} 
+
+Set Vx = Vx OR Vy \mbox{\Hypertarget{classChip8_a6165dfc32aee86bdcea06e2c6db2bc19}\label{classChip8_a6165dfc32aee86bdcea06e2c6db2bc19}} 
+\index{Chip8@{Chip8}!OP\_8xy2@{OP\_8xy2}}
+\index{OP\_8xy2@{OP\_8xy2}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{OP\_8xy2()}{OP\_8xy2()}}
+{\footnotesize\ttfamily void Chip8\+::\+OP\+\_\+8xy2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{AND Vx, Vy}} 
+
+Set Vx = Vx AND Vy \mbox{\Hypertarget{classChip8_a707447f4dbcd2c7893c7fe0eb7b4974f}\label{classChip8_a707447f4dbcd2c7893c7fe0eb7b4974f}} 
+\index{Chip8@{Chip8}!OP\_8xy3@{OP\_8xy3}}
+\index{OP\_8xy3@{OP\_8xy3}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{OP\_8xy3()}{OP\_8xy3()}}
+{\footnotesize\ttfamily void Chip8\+::\+OP\+\_\+8xy3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{XOR Vx, Vy}} 
+
+Set Vx = Vx XOR Vy \mbox{\Hypertarget{classChip8_a6d04cc7e4350b10d4c54af7b5e222c2c}\label{classChip8_a6d04cc7e4350b10d4c54af7b5e222c2c}} 
+\index{Chip8@{Chip8}!OP\_8xy4@{OP\_8xy4}}
+\index{OP\_8xy4@{OP\_8xy4}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{OP\_8xy4()}{OP\_8xy4()}}
+{\footnotesize\ttfamily void Chip8\+::\+OP\+\_\+8xy4 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{ADD Vx, Vy}} 
+
+Set Vx = Vx + Vy. Set VF = carry \mbox{\Hypertarget{classChip8_a39b6095f460e927986c5fee7759fddda}\label{classChip8_a39b6095f460e927986c5fee7759fddda}} 
+\index{Chip8@{Chip8}!OP\_8xy5@{OP\_8xy5}}
+\index{OP\_8xy5@{OP\_8xy5}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{OP\_8xy5()}{OP\_8xy5()}}
+{\footnotesize\ttfamily void Chip8\+::\+OP\+\_\+8xy5 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{SUB Vx, Vy}} 
+
+Set Vx = Vx -\/ Vy. Set VF = NOT borrow \mbox{\Hypertarget{classChip8_a957e2b2bd4ba68ab15b69a02f8612844}\label{classChip8_a957e2b2bd4ba68ab15b69a02f8612844}} 
+\index{Chip8@{Chip8}!OP\_8xy6@{OP\_8xy6}}
+\index{OP\_8xy6@{OP\_8xy6}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{OP\_8xy6()}{OP\_8xy6()}}
+{\footnotesize\ttfamily void Chip8\+::\+OP\+\_\+8xy6 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{SHR Vx}} 
+
+Set Vx = Vx SHR 1 \mbox{\Hypertarget{classChip8_abd2e774be09db233592a0e5da092fae6}\label{classChip8_abd2e774be09db233592a0e5da092fae6}} 
+\index{Chip8@{Chip8}!OP\_8xy7@{OP\_8xy7}}
+\index{OP\_8xy7@{OP\_8xy7}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{OP\_8xy7()}{OP\_8xy7()}}
+{\footnotesize\ttfamily void Chip8\+::\+OP\+\_\+8xy7 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{SUBN Vx, Vy}} 
+
+Set Vx = Vy -\/ Vx. Set VF = NOT borrow \mbox{\Hypertarget{classChip8_a44df0fa024f9c2cb4e02d58a37c863f9}\label{classChip8_a44df0fa024f9c2cb4e02d58a37c863f9}} 
+\index{Chip8@{Chip8}!OP\_8xyE@{OP\_8xyE}}
+\index{OP\_8xyE@{OP\_8xyE}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{OP\_8xyE()}{OP\_8xyE()}}
+{\footnotesize\ttfamily void Chip8\+::\+OP\+\_\+8xyE (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{SHL Vx}} 
+
+Set Vx = Vx SHL 1. Set VF = MSB \mbox{\Hypertarget{classChip8_a01d5f9d78111161c8490a7bc72494a64}\label{classChip8_a01d5f9d78111161c8490a7bc72494a64}} 
+\index{Chip8@{Chip8}!OP\_9xy0@{OP\_9xy0}}
+\index{OP\_9xy0@{OP\_9xy0}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{OP\_9xy0()}{OP\_9xy0()}}
+{\footnotesize\ttfamily void Chip8\+::\+OP\+\_\+9xy0 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{SNE Vx, Vy}} 
+
+Skip next instruction if Vx != Vy \mbox{\Hypertarget{classChip8_aeffd2a3c7e4492433113f2db92ee4c10}\label{classChip8_aeffd2a3c7e4492433113f2db92ee4c10}} 
+\index{Chip8@{Chip8}!OP\_Annn@{OP\_Annn}}
+\index{OP\_Annn@{OP\_Annn}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{OP\_Annn()}{OP\_Annn()}}
+{\footnotesize\ttfamily void Chip8\+::\+OP\+\_\+\+Annn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{LD I, addr}} 
+
+Set I = nnn \mbox{\Hypertarget{classChip8_a7ae912cf91e7c034ecbff793f2e14fb6}\label{classChip8_a7ae912cf91e7c034ecbff793f2e14fb6}} 
+\index{Chip8@{Chip8}!OP\_Bnnn@{OP\_Bnnn}}
+\index{OP\_Bnnn@{OP\_Bnnn}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{OP\_Bnnn()}{OP\_Bnnn()}}
+{\footnotesize\ttfamily void Chip8\+::\+OP\+\_\+\+Bnnn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{JP V0, addr}} 
+
+Jump to location nnn + V0 \mbox{\Hypertarget{classChip8_a39864a92adc7963c323fd2103a1ed80d}\label{classChip8_a39864a92adc7963c323fd2103a1ed80d}} 
+\index{Chip8@{Chip8}!OP\_Cxkk@{OP\_Cxkk}}
+\index{OP\_Cxkk@{OP\_Cxkk}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{OP\_Cxkk()}{OP\_Cxkk()}}
+{\footnotesize\ttfamily void Chip8\+::\+OP\+\_\+\+Cxkk (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{RND Vx, byte}} 
+
+Set Vx = random\+Byte AND kk \mbox{\Hypertarget{classChip8_ae9579c58b211535fc15628266a5abae9}\label{classChip8_ae9579c58b211535fc15628266a5abae9}} 
+\index{Chip8@{Chip8}!OP\_Dxyn@{OP\_Dxyn}}
+\index{OP\_Dxyn@{OP\_Dxyn}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{OP\_Dxyn()}{OP\_Dxyn()}}
+{\footnotesize\ttfamily void Chip8\+::\+OP\+\_\+\+Dxyn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{DRW Vx, Vy, nibble}} 
+
+Draw n-\/byte sprite starting at memory location I at (Vx, Vy). Set VF = collision \mbox{\Hypertarget{classChip8_a8e4f8dd2f117d454d5b60e5514aa57dd}\label{classChip8_a8e4f8dd2f117d454d5b60e5514aa57dd}} 
+\index{Chip8@{Chip8}!OP\_Ex9E@{OP\_Ex9E}}
+\index{OP\_Ex9E@{OP\_Ex9E}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{OP\_Ex9E()}{OP\_Ex9E()}}
+{\footnotesize\ttfamily void Chip8\+::\+OP\+\_\+\+Ex9E (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{SKP Vx}} 
+
+Skip next instruction if key with value = Vx is pressed \mbox{\Hypertarget{classChip8_a0537b2069b609522c9bbba0184db2725}\label{classChip8_a0537b2069b609522c9bbba0184db2725}} 
+\index{Chip8@{Chip8}!OP\_ExA1@{OP\_ExA1}}
+\index{OP\_ExA1@{OP\_ExA1}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{OP\_ExA1()}{OP\_ExA1()}}
+{\footnotesize\ttfamily void Chip8\+::\+OP\+\_\+\+Ex\+A1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{SKNP Vx}} 
+
+Skip next instruction if key with value = Vx is NOT pressed \mbox{\Hypertarget{classChip8_a83698f3b7ef770b02e09d44c3daace06}\label{classChip8_a83698f3b7ef770b02e09d44c3daace06}} 
+\index{Chip8@{Chip8}!OP\_Fx07@{OP\_Fx07}}
+\index{OP\_Fx07@{OP\_Fx07}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{OP\_Fx07()}{OP\_Fx07()}}
+{\footnotesize\ttfamily void Chip8\+::\+OP\+\_\+\+Fx07 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{LD Vx, DT}} 
+
+Set Vx = delay timer value \mbox{\Hypertarget{classChip8_a39c1ec65d33cd718509edaaa69e2bc28}\label{classChip8_a39c1ec65d33cd718509edaaa69e2bc28}} 
+\index{Chip8@{Chip8}!OP\_Fx0A@{OP\_Fx0A}}
+\index{OP\_Fx0A@{OP\_Fx0A}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{OP\_Fx0A()}{OP\_Fx0A()}}
+{\footnotesize\ttfamily void Chip8\+::\+OP\+\_\+\+Fx0A (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{LD Vx, K}} 
+
+Wait for key press and store its value in Vx \mbox{\Hypertarget{classChip8_a9f3b25aa9a4a63072eb570fdae10f0a5}\label{classChip8_a9f3b25aa9a4a63072eb570fdae10f0a5}} 
+\index{Chip8@{Chip8}!OP\_Fx15@{OP\_Fx15}}
+\index{OP\_Fx15@{OP\_Fx15}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{OP\_Fx15()}{OP\_Fx15()}}
+{\footnotesize\ttfamily void Chip8\+::\+OP\+\_\+\+Fx15 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{LD DT, Vx}} 
+
+Set delay timer value = Vx \mbox{\Hypertarget{classChip8_a7659917688df1a2cc14747b083f06087}\label{classChip8_a7659917688df1a2cc14747b083f06087}} 
+\index{Chip8@{Chip8}!OP\_Fx18@{OP\_Fx18}}
+\index{OP\_Fx18@{OP\_Fx18}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{OP\_Fx18()}{OP\_Fx18()}}
+{\footnotesize\ttfamily void Chip8\+::\+OP\+\_\+\+Fx18 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{LD ST, Vx}} 
+
+Set sound timer = Vx \mbox{\Hypertarget{classChip8_a1ba6c43bbae06d99dd0266412167daf2}\label{classChip8_a1ba6c43bbae06d99dd0266412167daf2}} 
+\index{Chip8@{Chip8}!OP\_Fx1E@{OP\_Fx1E}}
+\index{OP\_Fx1E@{OP\_Fx1E}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{OP\_Fx1E()}{OP\_Fx1E()}}
+{\footnotesize\ttfamily void Chip8\+::\+OP\+\_\+\+Fx1E (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{ADD I, Vx}} 
+
+Set I = I + Vx \mbox{\Hypertarget{classChip8_ace4a58f583f3c971b1dc5ae96b7e855a}\label{classChip8_ace4a58f583f3c971b1dc5ae96b7e855a}} 
+\index{Chip8@{Chip8}!OP\_Fx29@{OP\_Fx29}}
+\index{OP\_Fx29@{OP\_Fx29}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{OP\_Fx29()}{OP\_Fx29()}}
+{\footnotesize\ttfamily void Chip8\+::\+OP\+\_\+\+Fx29 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{LD F, Vx}} 
+
+Set I = location of sprite for digit Vx \mbox{\Hypertarget{classChip8_aabcbaa3bf8bba432c06129e92c7a818f}\label{classChip8_aabcbaa3bf8bba432c06129e92c7a818f}} 
+\index{Chip8@{Chip8}!OP\_Fx33@{OP\_Fx33}}
+\index{OP\_Fx33@{OP\_Fx33}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{OP\_Fx33()}{OP\_Fx33()}}
+{\footnotesize\ttfamily void Chip8\+::\+OP\+\_\+\+Fx33 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{LD B, Vx}} 
+
+Store BCD representation of Vx in memory locations I, I+1, I+2 \mbox{\Hypertarget{classChip8_a8fdbd98f87ae424cd7c3ceee230b68c9}\label{classChip8_a8fdbd98f87ae424cd7c3ceee230b68c9}} 
+\index{Chip8@{Chip8}!OP\_Fx55@{OP\_Fx55}}
+\index{OP\_Fx55@{OP\_Fx55}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{OP\_Fx55()}{OP\_Fx55()}}
+{\footnotesize\ttfamily void Chip8\+::\+OP\+\_\+\+Fx55 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{LD \mbox{[}I\mbox{]}, Vx}} 
+
+Store registers V0 to Vx in memory starting from location I \mbox{\Hypertarget{classChip8_a18d0410d24b6cdc71c12b39c60f49f0f}\label{classChip8_a18d0410d24b6cdc71c12b39c60f49f0f}} 
+\index{Chip8@{Chip8}!OP\_Fx65@{OP\_Fx65}}
+\index{OP\_Fx65@{OP\_Fx65}!Chip8@{Chip8}}
+\doxysubsubsection{\texorpdfstring{OP\_Fx65()}{OP\_Fx65()}}
+{\footnotesize\ttfamily void Chip8\+::\+OP\+\_\+\+Fx65 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+{\bfseries{LD \mbox{[}Vx\mbox{]}, I}} 
+
+Read registers V0 to Vx starting from memory location I 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

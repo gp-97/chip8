@@ -34,4 +34,7 @@ constexpr uint8_t fontset[FONTSET_SIZE] =
         0xF0, 0x80, 0xF0, 0x80, 0x80  // F
 };
 
+constexpr unsigned int VIDEO_WIDTH{64};
+constexpr unsigned int VIDEO_HEIGHT{32};
+
 #endif
