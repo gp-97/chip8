@@ -11,9 +11,10 @@
 
 #include <prelude.h>
 
+#include <cstring>
 #include <cstdint>
-#include <fstream>
 #include <chrono>
+#include <fstream>
 #include <random>
 
 /** @brief Chip8 prototype class
