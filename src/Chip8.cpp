@@ -9,7 +9,14 @@
 #include <Chip8.h>
 
 // Chip8 constructor implementation
-Chip8::Chip8() : pc(START_ADDRESS) {}
+Chip8::Chip8() : pc(START_ADDRESS)
+{
+    // Load fonts into main memory
+    for (unsigned int i{}; i < FONTSET_SIZE; ++i)
+    {
+        memory[FONTSET_START_ADDRESS + i] = fontset[i];
+    }
+}
 
 // Chip8 destructor
 Chip8::~Chip8() {}
@@ -32,6 +39,7 @@ void Chip8::LoadROM(char const *filename)
         file.close();
 
         // Fill the Chip-8's memory with ROM's content starting from 0x200
+        // as memory from 0x000 - 0x1FF is reserved
         for (int i{}; i < size; ++i)
         {
             memory[START_ADDRESS + i] = buffer[i];

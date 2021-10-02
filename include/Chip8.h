@@ -68,7 +68,7 @@ public:
     ~Chip8();
 
 public:
-    /**@brief ROM Loader
+    /** @brief ROM Loader
  * 
  * Loads ROM into the main memory before any execution occurs
  * 
