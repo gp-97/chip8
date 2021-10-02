@@ -13,6 +13,8 @@
 
 #include <cstdint>
 #include <fstream>
+#include <chrono>
+#include <random>
 
 /** @brief Chip8 prototype class
  * 
@@ -55,6 +57,10 @@ public:
     uint8_t keypad[16]{};
     uint8_t video[64 * 32]{};
     uint16_t opcode{};
+
+public:
+    std::default_random_engine randGen;
+    std::uniform_int_distribution<uint8_t> randByte;
 
 public:
     /** @brief Chip8 Constructor

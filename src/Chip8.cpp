@@ -9,13 +9,16 @@
 #include <Chip8.h>
 
 // Chip8 constructor implementation
-Chip8::Chip8() : pc(START_ADDRESS)
+Chip8::Chip8() : pc(START_ADDRESS), randGen(std::chrono::system_clock::now().time_since_epoch().count())
 {
     // Load fonts into main memory
     for (unsigned int i{}; i < FONTSET_SIZE; ++i)
     {
         memory[FONTSET_START_ADDRESS + i] = fontset[i];
     }
+
+    // Random number generation seeding
+    this->randByte = std::uniform_int_distribution<uint8_t>(0, 255U);
 }
 
 // Chip8 destructor
